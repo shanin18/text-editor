@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main class="container mx-auto bg-blue-300 shadow-2xl mt-8 pb-8 rounded-lg">
+        <h1 class="text-center py-4 font-semibold text-3xl">My Text <span class="text-purple-500">Editor</span></h1>
+        <div class="bg-blue-200 w-[80%] mx-auto p-6 border-2 border-black">
+            <div class="md:flex justify-between items-center border-b-2 border-stone-500 pb-4">
+                <div class="flex gap-4">
+                    <button id="bold"><i class="fa-solid fa-bold p-3 hover:bg-blue-400 rounded-lg"></i></button>
+                    <button id="italic"><i class="fa-solid fa-italic p-3 hover:bg-blue-400 rounded-lg"></i></button>
+                    <button id="underline"><i class="fa-solid fa-underline p-3 hover:bg-blue-400 rounded-lg"></i></button>
+                </div>
+                <div class="flex gap-4">
+                    <button id="text-left"><i class="fa-solid fa-align-left p-3 hover:bg-blue-400 rounded-lg"></i></button>
+                    <button id="text-center"><i class="fa-solid fa-align-center p-3 hover:bg-blue-400 rounded-lg"></i></button>
+                    <button id="text-right"><i class="fa-solid fa-align-right p-3 hover:bg-blue-400 rounded-lg"></i></button>
+                   <button id="text-justify"><i class="fa-solid fa-align-justify p-3 hover:bg-blue-400 rounded-lg"></i></button>
+                </div>
+                <div class="flex gap-4">
+                    <input id="font-size" class=" font-semibold w-12 outline-none pl-2" type="number" value="18" min="1" max="100">
+                    <button class="font-semibold text-lg"id="upperCase">aA</button>
+                    <input type="color" id="changeColor">
+                </div>
+            </div>
+            <textarea id="textarea" class="w-full mt-6 outline-none" rows="18">
+                
+            </textarea>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
